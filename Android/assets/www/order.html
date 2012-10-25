@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">    
+    <title>YouFood Inc.</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/cordova-1.8.0.js"></script>
+    <script type="text/javascript" src="js/dataHandler.js"></script>
+    <script type="text/javascript" src="SAiOSPaypalPlugin.js"></script>
+    <script type="text/javascript" src="paypal.js"></script>
+    <script type="text/javascript" src="js/retrieveOrder.js"></script>
+</head>
+    
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>YouFood</h1>
+        
+        <a data-role="button" data-mini="true" data-icon="gear" href="#" onclick="javascript:window.location.href='settings.html';">Réglages</a>
+        <a data-role="button" data-mini="true" data-icon="home" href="#" onclick="javascript:window.location.href='index.html';">Accueil</a>
+        
+    </div>
+    <div data-role="content">
+
+        <h2>Votre commande :</h2>
+            
+        <ul data-role="listview" data-inset="true" id="dishes">
+        </ul>
+        
+        <h4 id="total"></h4>
+
+        <a data-role="button" data-mini="true" data-inline="true" data-icon="arrow-l" href="#" onclick="javascript:window.location.href='index.html';">Continuer ma Commande</a>
+        <a data-role="button" data-mini="true" data-inline="true" data-icon="delete" rel="external" href="#" onclick="javascript:emptyCart();">Vider ma Commande</a>
+
+        <a href="#" data-role="button" data-inline="true" data-theme="b" id="payment-button">Accéder au Règlement</a>
+        
+        <img id='pmt_show_loading' src='loadingAnimation.gif' style='display:none;' />
+       
+    </div>
+</div>
+</body>
+</html>	

@@ -5,7 +5,7 @@ Projet de groupe dev mobile.
 
 #### About YouFood - SUPINFO Project  
   
-[- WebSite](http://www.supinfo.com/)  
+[WebSite](http://www.supinfo.com/)  
 
 #### Structure du projet
 

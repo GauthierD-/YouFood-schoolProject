@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">    
+    <title>YouFood Inc.</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/cordova-1.8.0.js"></script>
+    <script type="text/javascript" src="js/retrieveMenu.js"></script>
+    <script type="text/javascript" src="js/dataHandler.js"></script>
+</head>
+    
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <h1>YouFood</h1>
+        
+        <a data-role="button" data-mini="true" data-icon="gear" href="#" onclick="javascript:window.location.href='settings.html';">Réglages</a>
+        <a data-role="button" data-mini="true" data-icon="home" href="#" onclick="javascript:window.location.href='index.html';">Accueil</a>
+    </div>
+    <div data-role="content">
+        <h1 id="country_name">Le Pays de la semaine : </h1>
+        <h2>Entrées :</h2>
+            <ul data-role="listview" data-inset="true" id="appetizers">         
+            </ul>
+        
+        <h2>Plats :</h2>
+            <ul data-role="listview" data-inset="true" id="dishes">         
+            </ul>
+        
+        <h2>Desserts :</h2>
+            <ul data-role="listview" data-inset="true" id="desserts">         
+            </ul>
+        
+        <h2>Boissons :</h2>
+            <ul data-role="listview" data-inset="true" id="drinks">         
+            </ul>
+
+        <a data-role="button" data-mini="true" data-inline="true" data-icon="star" href="#" onclick="javascript:window.location.href='order.html';">Ma Commande</a>
+       
+    </div>
+</div>
+</body>
+</html>	
